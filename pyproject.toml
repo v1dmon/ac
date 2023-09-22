@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "ac"
+version = "0.1.0"
+description = "asymmetric trace converter"
+authors = ["resu-gh <9valentino4@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+pandas = "^2.1.1"
+black = "^23.9.1"
+pyyaml = "^6.0.1"
+isort = "^5.12.0"
+
+[tool.poetry.scripts]
+ac = "ac:main"
+
+[tool.black]
+line-length = 150
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
